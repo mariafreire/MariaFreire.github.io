@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--FILE CREATED TO DISPLAY MY PAGE ON BROWSERS   -->
+   
+</head>
+<body>
+    <div class="page">
+        <span class="menu_toggle">
+            <i class="menu_open fa fa-bars fa-lg"></i> 
+            <i class="menu_close fa fa-times fa-lg"></i> 
+        </span>
+        <ul class="menu_items">
+            <li><a href="#" id="active">Home</a></li>
+            <li><a href="samples.html">Samples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="content">
+            <div class="container">
+                <div class="hello">HE<br>LLO<span class="hello-dot">.</span></div>
+                <div id="me">I am Maria.</div>
+                <div class="social">
+                    <a href="https://github.com/mariafreire" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://codepen.io/mariaFreire/" target="_blank"><i class="fa fa-codepen"></i></a>
+                    <a href="https://www.linkedin.com/in/freiremaria/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>  
+            </div>
+            <div id="particles-js"></div>
+            <h1 id="love" class="ityped"></h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        window.ityped.init(document.querySelector('.ityped'), {
+            strings : ['I love HTML5','I love CSS3','I love JS'],
+            loop : true
+        })
+    
+        var $page = $('.page');
+        $('.menu_toggle').on('click', function (){
+            $page.toggleClass('real');
+        });
+        $('.content').on('click', function (){
+            $page.removeClass('real');
+        });
+    </script>
+</body>
+</html>
