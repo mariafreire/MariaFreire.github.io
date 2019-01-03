@@ -239,20 +239,25 @@ a {
     #me {
         margin-top: 50px;
         margin-left: 30px;
-        font-size: 40px;
+        font-size: 30px;
     }
     
     #love {
         top:300px;
         left:55px;
+        font-size: 25px;
     }
     
     .social i {
         padding: 10px;
-        top: 90px;
+        top: 60px;
         margin-left: 120px;
     }
 
+    .menu_items {
+    	font-size: 20px;
+	}
+    
     .menu_items li {
         margin-bottom: -50px;
     }
