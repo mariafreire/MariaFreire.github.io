@@ -260,6 +260,7 @@ a {
     
     .menu_items li {
         margin-bottom: -50px;
+	padding: 50px;
     }
     
     .menu_items li:nth-child(2) {
