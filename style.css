@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800,900|Open+Sans:300,400,700|Raleway:300,400,700,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+html, body {
+    overflow: hidden;
+    font-family: 'Open Sans';
+    background-color: #AD5D4E;
+}
+
+section {
+    margin: 0;
+    height: 100vh;
+}
+
+#particles-js {
+    height: 100vh;
+    background:radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    font-family: Montserrat;
+}
+
+#text-left, #text-right {
+    float: left;
+}
+
+.hello {    
+    margin-right: 80px;
+    font-weight: 900;
+    font-size: 7em;
+    line-height: 90%;
+}
+
+.hello-dot, #me, .social i {
+    color: #70cad1;
+}
+
+#me {
+    width: 450px;
+    font-weight: 700;
+    font-size: 4em;
+    line-height: 90%;
+}
+
+#love {
+    font-size: 3em;
+}
+
+a {
+    color:inherit; /* it changes awesome font color, that was purple */
+    text-decoration: none; /* get the underline/border off */
+}
+  
+.social {
+    position: absolute;
+    right: 50px;
+    bottom: 10%;
+}
+
+.social i{
+    font-size: 20px;
+    padding: 8px;
+    display: block;
+}
+
+.social i:hover{
+    color: white;
+}
+
+.content {
+    height: 200%;
+    transform-origin: top left;
+    transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+}
+
+.menu_toggle {
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    background-color: #007F7F;
+    border-bottom-right-radius: 100%;
+}
+
+.menu_toggle i {
+    color: #f0f0f0;
+}
+
+.menu_toggle .menu_open, .menu_toggle .menu_close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -12px;
+    transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
+}
+
+.menu_toggle .menu_open {
+    transform-origin: -100px -100px;
+}
+
+.menu_toggle .menu_close {
+    transform: rotate(20deg);
+    transform-origin: -100px -160px;
+}
+
+.menu_items {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+.menu_items li {
+    height: 30px;
+    margin-bottom: 15px;
+    transform: translateX(-300px);
+    transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+}
+
+.menu_items li:nth-child(2) {
+    margin-left: 20px;
+}
+
+.menu_items li:nth-child(3) {
+    margin-left: 40px;
+}
+
+.menu_items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #F4FDD9;
+}
+
+.menu_items a:hover {
+    color: #FFB100;
+}
+
+#active {
+    color: #181818;
+}
+
+/* move menu */
+
+.real .content {
+    transform: rotate(-30deg);
+}
+
+.real .menu_open {
+    transform: rotate(-20deg);
+}
+
+.real .menu_close {
+    transform: rotate(0);
+}
+
+.real .menu_items li {
+    transform: translateX(0);
+    transition: transform 0.35s 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.real .menu_items li:nth-child(2) {
+    transition-delay: 0.47;
+}
+
+.real .menu_items li:nth-child(3) {
+    transition-delay: 0.48;
+}
+
+
+@media only screen and (max-width:823px) { 
+    .hello {    
+        font-weight: 900;
+        font-size: 5em;
+    }
+    
+    #me {
+        width: 350px;
+        font-size: 3em;
+    }
+    
+    #love {
+        font-size: 2em;
+    }    
+}
+
+@media only screen and (max-width:625px) { 
+    .hello {    
+        font-weight: 900;
+        font-size: 4em;
+        margin-right: 20px;
+    }
+    
+    #me {
+        width: 250px;
+        font-size: 2em;
+    }
+    
+    #love {
+        font-size: 30px;
+    }    
+
+    .social {
+        position: absolute;
+        right: 30px;
+    }    
+}
+
+@media only screen and (max-width:425px) { 
+    .hello {    
+        font-weight: 900;
+        font-size: 45px;
+        margin-right: 10px;
+    }
+    
+    #me {
+        width: 210px;
+        font-size: 30px;
+    }
+    
+    #love {
+        font-size: 25px;
+    }        
+}
+
+@media only screen and (max-width:327px) { 
+    .hello {    
+        font-weight: 900;
+        font-size: 35px;
+    }
+    
+    #me {
+        width: 140px;
+        font-size: 20px;
+    }
+    
+    #love {
+        font-size: 18px;
+    }        
+}
